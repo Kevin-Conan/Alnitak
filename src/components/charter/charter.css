@@ -1,0 +1,437 @@
+.zoom
+{
+    zoom: 70%;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.modal_container{
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.25);
+}
+#modal_button{
+    width: 100px;
+    margin-left: 50px;
+}
+.chapter1{
+    background-image: url("../image/5539148.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+
+}
+.grid_container{
+    display: grid;
+    grid-template-columns:150px auto;
+    justify-content: center;
+}
+.grid2{
+    display: grid;
+    grid-template-rows:200px 300px 200px 200px;
+    row-gap: 20px;
+}
+.grid3{
+    display: grid;
+    grid-template-columns: 120px auto;
+    column-gap: 20px;
+}
+.grid4{
+    display: grid;
+    grid-template-rows: 150px 50px;
+}
+.grid4_button{
+    display: grid;
+    grid-template-columns:300px 300px;
+    column-gap: 100px;
+    margin-left: 350px;
+}
+.chapter1_content{
+    width: 1600px;
+    height: 900px;
+}
+#grid2_title{
+    display: flex;
+    align-content: end;
+    justify-content: start;
+    margin-top: 7%;
+    margin-left: 100px;
+    font-size: 1.76em;
+    color: white;
+    z-index: 10;
+    margin-bottom: 0;
+}
+@keyframes animated-border {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+    }
+    100% {
+       box-shadow: 0 0 0 20px rgba(255,255,255,0);
+    }
+  }
+#father1{
+    margin-left: 5%;
+}
+#father2{
+    margin-top: 0.1%;
+    margin-left: 50px;
+    height: 200px;
+}
+#father3{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.box2 {
+    overflow-wrap: break-word;
+    animation: animated-border 1.5s infinite;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    width: 1200px;
+    height: auto;
+    min-height: 50px;
+    max-height: 200px;
+    overflow: scroll;
+}
+#box1{
+    align-items: start;
+    margin-top: 100px;
+}
+#box2{
+    align-items: start;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+#character1{
+    margin-top: 50px;
+    width: 100px;
+    height: 200px;
+    display: inline;
+}
+#character2{
+    margin-top: 0px;
+    width: 120px;
+    height: 200px;
+    display: inline;
+}
+
+.float-div{
+    display: inline;
+}
+.float-div2{
+    display: inline;
+}
+
+.input {
+    animation: animated-border 1.5s infinite;
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 1200px;
+    background-color: transparent;
+    overflow-wrap: break-word;
+    height: 150px;
+    resize: none;
+}
+
+.input-textbox:focus {
+    border-color: #007bff; /* 聚焦时边框颜色 */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* 聚焦时的阴影效果 */
+}
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0em 1em 1em;
+    background-color: yellow;
+    cursor: pointer;
+    box-shadow: 4px 6px 0px black;
+    border: 4px solid;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+    transition: box-shadow 250ms, transform 250ms, filter 50ms;
+    font-size: large;
+  }
+.button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 3px 0px black;
+  }
+.button:active {
+    filter: saturate(0.75);
+  }
+.button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: pink;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: transform 250ms;
+  }
+.button:hover::after {
+    transform: translateX(0);
+  }
+  .bgContainer {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    max-width: 35%; /* adjust this if the button text is not proper */
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .bgContainer span {
+    position: relative;
+    transform: translateX(-100%);
+    transition: all 250ms;
+  }
+  .button:hover .bgContainer > span {
+    transform: translateX(0);
+  }
+  .arrowContainer {
+    padding: 1em;
+    margin-inline-end: 1em;
+    border: 4px solid;
+    border-radius: 50%;
+    background-color: pink;
+    position: relative;
+    overflow: hidden;
+    transition: transform 250ms, background-color 250ms;
+    z-index: 100;
+  }
+  .arrowContainer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background-color: yellow;
+    transform: translateX(-100%);
+    z-index: -1;
+    transition: transform 250ms ease-in-out;
+  }
+  button:hover .arrowContainer::after {
+    transform: translateX(0);
+  }
+  button:hover .arrowContainer {
+    transform: translateX(5px);
+  }
+  button:active .arrowContainer {
+    transform: translateX(8px);
+  }
+  .arrowContainer svg {
+    vertical-align: middle;
+  }
+  
+#button1{
+    width: 300px;
+}
+.griditem{
+    margin-right: 0;
+}
+
+#form2{
+    position: absolute;
+    bottom: 100px;
+    
+}
+#textarea2{
+    margin-left: 100px;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.list{
+    margin-top: 500px;
+    color: aliceblue;
+}
+
+.gridchild{
+    display: grid;
+    grid-template-rows:auto auto auto;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    margin-top: 60px;
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 100px;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10); 
+    font-size: large;
+}
+.sidebarMenuInner li{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    color: rgba(255, 255, 255, 0.50);
+}
+.sidebarMenuInner li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    top: 92px;
+    left: 65px;
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+.cursor{
+    cursor: url('../image/cursor.png'), auto;
+}
+.loader_container{
+    position: fixed;
+    right: 20%;
+    top: 20%;
+}
+progress {
+    appearance: none;
+    width: 200px;
+    height: 10px;
+    border-radius: 10px;
+}
+progress::-webkit-progress-value {
+    background-color:rgb(101, 217, 249); /* WebKit浏览器（如Chrome、Safari） */
+  }
+.yoda{
+    border-radius: 2px;
+    display: block;
+    box-shadow:0px 0px 10px 10px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A;
+    background-color: #eee4e4;
+}
+.jindu_span{
+    font-size: large;
+    color: white;
+}
